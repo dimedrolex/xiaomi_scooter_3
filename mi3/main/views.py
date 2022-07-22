@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
 
 
 def index(request):
@@ -7,4 +7,4 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("<h2>Страница про нас</h2>")
+    return render(request, 'main/about.html')
