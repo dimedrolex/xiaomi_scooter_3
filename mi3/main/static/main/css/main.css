@@ -1,0 +1,44 @@
+body {
+    background: radial-gradient(ellipse,#fff,#d6d5d5);
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 18%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #334391;
+}
+
+aside img {
+    float: left;
+}
+
+aside .logo {
+    font-size: 20px;
+    margin-left: 14px;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 16px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #1339f5;
+    text-decoration: none;
+    transform: scale(1.05);
+}
