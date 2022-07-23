@@ -8,9 +8,22 @@
     <title>{% block title %}{% endblock %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <script src="https://kit.fontawesome.com/4a73011631.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    {% block content %}
-    {% endblock %}
+    <aside>
+        <img src="{% static 'main/img/IMG_5040.PNG' %}" style="max-width:32px;max-height:32px" alt="Logo">
+        <span class="logo">Xiaomi Scooter 3</span>
+        <h3>Навигация</h3>
+        <ul>
+            <a href=""><li><i class="fa-solid fa-house-chimney"></i> Главная</li></a>
+            <a href=""><li><i class="fa-solid fa-address-card"></i> Про нас</li></a>
+            <a href=""><li><i class="fa-solid fa-address-book"></i> Контакты</li></a>
+        </ul>
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 </body>
 </html>
