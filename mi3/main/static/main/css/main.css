@@ -46,7 +46,7 @@ aside ul li:hover, aside ul a:hover {
 main .features {
     float: left;
     color: #334391;
-    margin-top: 110px;
+    margin-top: 48px;
     text-align: center;
     width: 80%;
 }
@@ -55,6 +55,8 @@ main .features h1 {font-size: 50px;}
 main .features h1 {font-size: 40px;}
 main .features p {max-width: 400px; margin: 20px auto; color:#000;}
 
+
+/* Тут о вкладке About */
 
 main .features_about {
     float: left;
@@ -65,4 +67,16 @@ main .features_about {
 }
 
 main .features_about h1 {font-size: 40px;}
-main .features_about p {max-width: 750px; margin: 20px auto; color:#000;}
+main .features_about p {max-width: 700px; margin: 20px auto; color:#000;}
+
+
+/* Тут о вкладке News */
+
+.alert-warning {
+    float: left;
+    clear: both;
+    /* color: #d82525; */
+    width: 460px;
+    margin: 20px 30%;
+    text-align: left;
+}

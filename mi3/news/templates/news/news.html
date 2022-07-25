@@ -5,6 +5,12 @@
 {% block content %}
     <div class="features">
         <h1>Новости из мира Xiaomi</h1>
-        <p>Прочная и в то же время легкая конструкция. Более долговечный аккумулятор со смарт-режимом. Выдающийся дизайн. Три режима скорости.</p>
+        
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.annons }}</p>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
