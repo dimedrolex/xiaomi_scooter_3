@@ -1,5 +1,5 @@
 body {
-    background: radial-gradient(ellipse,#fff,#d6d5d5);
+    background: radial-gradient(ellipse,#fff,#cdcbcb);
 }
 
 aside {
@@ -75,8 +75,13 @@ main .features_about p {max-width: 700px; margin: 20px auto; color:#000;}
 .alert-warning {
     float: left;
     clear: both;
-    /* color: #d82525; */
     width: 460px;
     margin: 20px 30%;
     text-align: left;
+}
+
+form {
+    margin-left: 27%;
+    width: 532px;
+    margin-top: 50px;
 }
