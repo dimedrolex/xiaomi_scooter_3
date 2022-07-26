@@ -10,9 +10,19 @@ def news_general(request):
 
 
 def create(request):
+    if request.method == 'POST':
+        form = ArticlesForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        else:
+            error = 'Форма была не верной'
+
     form = ArticlesForm()
+
     data = {
         'form': form,
+        # 'error': error
     }
     return render (request, 'news/create.html', data)
 
